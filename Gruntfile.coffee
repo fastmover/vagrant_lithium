@@ -6,25 +6,10 @@ module.exports = (grunt) ->
   # Project configuration.
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
-
-  #
-  #    uglify: {
-  #      options: {
-  #        //banner: '! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n'
-  #      },
-  #      build: {
-  #        src: 'src/<%= pkg.name %>.js',
-  #        dest: 'build/<%= pkg.name %>.min.js'
-  #      }
-  #    },
-  #
     compass:
       dev:
         options:
-#          config: "public/framework/app/webroot/config.rb"
-#          cssDir: "public/framework/app/webroot/css"
           cssPath: "public/framework/app/webroot/css"
-#          sassDir: "public/framework/app/webroot/sass"
           sassPath: "public/framework/app/webroot/sass"
 
     watch:
@@ -34,8 +19,6 @@ module.exports = (grunt) ->
         tasks: ["compass"]
         options:
           debounceDelay: 250
-#          cssDir: "public/framework/app/webroot/css"
-#          sassDir: "public/framework/app/webroot/sass"
 
 
   # Load the plugin that provides the "uglify" task.

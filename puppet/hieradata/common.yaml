@@ -62,9 +62,9 @@ apache:
         - rewrite
     vhosts:
         KfbQReP4KFpD:
-            servername: local.localhost.com
+            servername: test.l3app.com
             serveraliases:
-                - www.local.localhost.com
+                - www.test.li3app.com
             docroot: /var/www/public
             port: '80'
             setenv:
