@@ -107,13 +107,4 @@ xdebug:
 mysql:
     root_password: root
     phpmyadmin: 0
-    databases:
-        li3app:
-            grant:
-                - ALL
-            name: li3app
-            host: localhost
-            user: root
-            password: root
-#            sql_file: /var/www/db/db.sql
-
+    databases: {  }
